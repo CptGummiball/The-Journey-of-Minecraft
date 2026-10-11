@@ -1,0 +1,61 @@
+name: Bug report
+description: Something does not work in the modpack or the server package.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time! Please check the [open issues](https://github.com/CptGummiball/The-Journey-of-Minecraft/issues) first.
+        If a single mod misbehaves the same way outside this pack, please report it to that mod's author instead.
+  - type: input
+    id: version
+    attributes:
+      label: Pack version
+      description: Shown in the bottom-left corner of the main menu, or in your launcher.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does it happen?
+      options:
+        - Singleplayer
+        - Multiplayer — client
+        - Dedicated server (server package)
+        - Installing / launcher
+    validations:
+      required: true
+  - type: input
+    id: launcher
+    attributes:
+      label: Launcher, OS and graphics card
+      placeholder: "Modrinth App, Windows 11, NVIDIA RTX 3060"
+  - type: dropdown
+    id: shaders
+    attributes:
+      label: Shaders enabled?
+      options:
+        - "No"
+        - "Yes — Complementary Reimagined (included)"
+        - "Yes — another shader pack"
+  - type: dropdown
+    id: changed
+    attributes:
+      label: Did you add, remove or update mods?
+      options:
+        - "No, the pack as installed"
+        - "Yes (please list them below)"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead? Screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Upload `logs/latest.log` (and the newest file in `crash-reports/` if the game crashed) to https://mclo.gs and paste the link here.

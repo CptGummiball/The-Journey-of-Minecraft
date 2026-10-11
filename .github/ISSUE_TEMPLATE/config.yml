@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the modpack (Modrinth)
+    url: https://modrinth.com/modpack/the-journey-of-minecraft
+    about: The pack itself is installed from Modrinth.
+  - name: Download the server package
+    url: https://github.com/CptGummiball/The-Journey-of-Minecraft/releases/latest
+    about: The dedicated server package is attached to every GitHub release.

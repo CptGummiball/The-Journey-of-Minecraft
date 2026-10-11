@@ -1,0 +1,19 @@
+name: Suggestion
+description: An idea for the Journey, a mod, a setting or the server package.
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The pack stays **Vanilla+**: no new ores, tech trees or RPG systems, and the journal never locks anything.
+        Mod suggestions must be available on Modrinth for Minecraft 1.21.1 (Fabric).
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it make the journey better?
